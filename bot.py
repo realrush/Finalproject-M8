@@ -82,9 +82,27 @@ CAREER_TREE = {
     "sg_doktor": {
         "text": "Doktorluk alanında hangi branş ilgini çekiyor?",
         "options": {
-            "Çocuk Hastalıkları": "final_genel_cerrahi",
-            "Göz Hastalıkları": "final_dahiliye",
-            "Göğüs": "final_pediatri"
+            "Çocuk Hastalıkları": "final_cocukh",
+            "Göz Hastalıkları": "final_goz",
+            "Göğüs": "final_gogus"
+        }
+    },
+    
+    "sg_lab": {
+        "text": "Laboratuvar alanında hangi branş ilgini çekiyor? (Seçeneklerinizi araştırınız!)",
+        "options": {
+            "Hematoloji": "final_hemato",
+            "Mikrobiyoloji": "final_mikro",
+            "Referans laboratuvarı": "final_reflab"
+        }
+    },
+
+    "sg_eczaci": {
+        "text": "Eczacılık alanında hangi branş ilgini çekiyor? (Seçeneklerinizi araştırınız!)",
+        "options": {
+            "Klinik eczacılık": "final_klinik",
+            "Endüstri eczacılığı": "final_endustri",
+            "Adli eczacılık": "final_adli"
         }
     },
 
@@ -139,38 +157,11 @@ CAREER_TREE = {
 
 
 
-
-
     # --- FİNAL CEVAPLAR ---
     "final_tamir": {
-        "text": "Tamir & bakım alanı sana uygun olabilir!"
+        "text": "Otomotiv tamir ve bakım teknisyeni olabilirsin!"
     },
-    "final_uretim": {
-        "text": "Üretim hattında çalışmak sana göre!"
-    },
-    "final_tasarim": {
-        "text": "CAD tasarım alanı tam sana göre olabilir!"
-    },
-    "final_cnc": {
-        "text": "CNC operatörlüğü geleceği parlak bir seçim!"
-    },
-    "final_montaj": {
-        "text": "Montaj teknisyenliği güzel bir alan!"
-    },
-    "final_devre": {
-        "text": "Elektronik devre tasarımı tam sana göre!"
-    },
-    "final_elektronik_tamir": {
-        "text": "Elektronik tamir alanında başarılı olabilirsin!"
-    },
-    "yazilim_1": {
-        "text": "Yazılım alanı yakında eklenecek!",
-        "options": {}
-    },
-    "saglik_1": {
-        "text": "Sağlık alanı yakında eklenecek!",
-        "options": {}
-    }
+
 }
 
 
