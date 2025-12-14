@@ -64,9 +64,9 @@ CAREER_TREE = {
     "yazilim_1": {
         "text": "Yazılımda hangi dal sana daha yakın?",
         "options": {
-            "Web Geliştirme": "yz_web",
-            "Mobil uygulama Geliştirme": "yz_mobil",
-            "Oyun Geliştirme": "yz_oyun"
+            "Web Geliştirme": "final_web",
+            "Mobil uygulama Geliştirme": "final_mobil",
+            "Oyun Geliştirme": "final_oyun"
         }
     },
     # --- SAĞLIK DALINDAKİ SORULAR ---
@@ -106,62 +106,52 @@ CAREER_TREE = {
         }
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     # --- FİNAL CEVAPLAR ---
     "final_tamir": {
         "text": "Otomotiv tamir ve bakım teknisyeni olabilirsin!"
     },
-
+    "final_uretim": {
+        "text": "Otomotiv üretim hattında çalışabilirsin!"
+    },
+    "final_tasarim": {
+        "text": "Otomotiv tasarımcısı (CAD) olabilirsin!"
+    },
+    "final_web": {
+        "text": "Web geliştiricisi olabilirsin!"
+    },
+    "final_mobil": {
+        "text": "Mobil uygulama geliştiricisi olabilirsin!"
+    },
+    "final_oyun": {
+        "text": "Oyun geliştiricisi olabilirsin!"
+    },
+    "final_cocukh": {
+        "text": "Çocuk hastalıkları doktoru olabilirsin!"
+    },
+    "final_goz": {
+        "text": "Göz hastalıkları doktoru olabilirsin!"
+    },
+    "final_gogus": {
+        "text": "Göğüs hastalıkları doktoru olabilirsin!"
+    },
+    "final_hemato": {
+        "text": "Hematoloji laboratuvarında çalışabilirsin!"
+    },
+    "final_mikro": {
+        "text": "Mikrobiyoloji laboratuvarında çalışabilirsin!"
+    },
+    "final_reflab": {
+        "text": "Referans laboratuvarında çalışabilirsin!"
+    },
+    "final_klinik": {
+        "text": "Klinik eczacısı olabilirsin!"
+    },
+    "final_endustri": {
+        "text": "Endüstri eczacısı olabilirsin!"
+    },
+    "final_adli": {
+        "text": "Adli eczacısı olabilirsin!"
+    }
 }
 
 
@@ -188,7 +178,7 @@ class CareerButton(Button):
     async def callback(self, interaction: discord.Interaction):
         if interaction.user != self.ctx.author:
             return await interaction.response.send_message(
-                "Bu kariyer yönlendirmesi sana ait!", ephemeral=True
+                "Bu kariyer sana daha çok uyuyor!", ephemeral=True
             )
 
         node = CAREER_TREE[self.next_node]
